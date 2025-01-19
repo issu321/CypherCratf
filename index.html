@@ -13,7 +13,7 @@
     margin: 0;
 }
 
-.image-container {
+.ussu-image {
     position: relative;
     overflow:visible;
     width: 300px;
@@ -22,7 +22,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.hover-image {
+.hover {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -32,7 +32,7 @@
     color-interpolation-filters: auto;
 }
 
-.image-container:hover .hover-image {
+.ussu-image:hover .hover {
     transform: scale(1.2);
     filter: brightness(190%);
     color: black;
@@ -46,8 +46,8 @@
 
 </style>
     <body>
-        <div class="image-container">
-            <img src="img1.jpeg" alt="Sample Image" class="hover-image">
+        <div class="ussu-image">
+            <img src="img.jpeg" alt="Sample Image" class="hover">
             <center>
                 <h1>
                     hover image <br>to see magic
