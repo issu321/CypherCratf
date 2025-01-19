@@ -1,0 +1,59 @@
+
+<html>
+    <head>
+        <title>Image Hover Animation</title>
+    </head>
+<style>
+    body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffffff;
+    margin: 0;
+}
+
+.image-container {
+    position: relative;
+    overflow:visible;
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hover-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    border: black;
+    border-color: black;
+    color-interpolation-filters: auto;
+}
+
+.image-container:hover .hover-image {
+    transform: scale(1.2);
+    filter: brightness(190%);
+    color: black;
+    text-wrap-style: balance;
+}
+.h1{
+    color: rgb(0, 0, 0);
+    text-decoration-color: beige;
+    text-decoration: underline;
+}
+
+</style>
+    <body>
+        <div class="image-container">
+            <img src="img1.jpeg" alt="Sample Image" class="hover-image">
+            <center>
+                <h1>
+                    hover image <br>to see magic
+                </h1>
+            </center>
+        </div>
+    </body>
+</html>
+
